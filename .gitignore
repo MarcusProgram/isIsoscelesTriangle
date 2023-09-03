@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include <iostream>
+using namespace std;
+bool rect(int a, int b, int c) {
+  if (a == b || b == c || c == a) {
+    return true;
+  } else {
+    return false;
+  }
+}
+int main() {
+  int a, b, c;
+  cin >> a >> b >> c;
+  if (rect(a, b, c) == true) {
+    cout << "YES" << endl;
+  } else {
+    cout << "NO" << endl;
+  }
+  return 0;
+}
